@@ -1,0 +1,1 @@
+https://oauth-lab-rennan.pages.dev/oauth/callback/google
