@@ -1,2 +1,0 @@
-Homepage URL: https://oauth-lab-rennan.pages.dev
-Authorization callback URL: https://oauth-lab-rennan.pages.dev/oauth/callback/github
