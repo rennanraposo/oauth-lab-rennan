@@ -1,5 +1,5 @@
 oauth_transactions_expiry - index
 sessions_expiry - index
-_cf_KV - table (Criado pelo CloudFlare, guardar informações de controle dela)
+_cf_KV - table 
 oauth_transactions - table
 sessions - table
