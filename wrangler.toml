@@ -1,0 +1,8 @@
+name = "oauth-lab-rennan"
+compatibility_date = "2026-10-08"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "oauth-sessions-rennan"
+database_id = "8c554c65-b24b-4f23-885a-c1e6adabe3d6"
+migrations_dir = "migrations"
