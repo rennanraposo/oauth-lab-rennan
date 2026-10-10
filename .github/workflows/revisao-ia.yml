@@ -40,7 +40,7 @@ jobs:
 
       - name: Revisa com IA
         id: ia
-        uses: actions/ai-inference@v1
+        uses: actions/ai-inference@41caef41a74eb26f6d0c6b1e9941d691588e0b2b
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_PAT }}
         with:
