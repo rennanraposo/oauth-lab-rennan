@@ -176,8 +176,20 @@ O resultado confirma a criação da coluna observacao, do tipo TEXT.
 
 ### Teste de merge sem alteração em migrations/
 
-Pendente: conferir após o merge deste arquivo, que não modifica
-migrations/, e registrar a evidência de que migrar não executou.
+O PR #4 alterou apenas AVALIACAO.md e foi mesclado na main:
+https://github.com/rennanraposo/oauth-lab-rennan/pull/4
+
+Commit do merge:
+109a28fb28674d2d2286914b77c1692abe11956d
+
+Nesse commit, somente o workflow ci executou e passou:
+https://github.com/rennanraposo/oauth-lab-rennan/actions/runs/38824952740
+
+Não houve execução do workflow migrar, confirmando que o filtro
+migrations/** evita sua execução quando apenas a documentação muda.
+
+Execuções associadas ao commit:
+https://github.com/rennanraposo/oauth-lab-rennan/actions?query=sha%3A109a28fb28674d2d2286914b77c1692abe11956d
 
 ## Perguntas
 
