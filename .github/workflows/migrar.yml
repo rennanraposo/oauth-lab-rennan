@@ -1,0 +1,30 @@
+name: migrar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "migrations/**"
+
+permissions:
+  contents: read
+
+jobs:
+  aplicar:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Aplica migracoes no D1 remoto
+        run: npx --yes wrangler d1 migrations apply oauth-sessions-rennan --remote
+
+      - name: Confere as colunas da tabela notas
+        run: npx --yes wrangler d1 execute oauth-sessions-rennan --remote --command "PRAGMA table_info(notas)"
