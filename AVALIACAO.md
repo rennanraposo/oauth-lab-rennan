@@ -3,6 +3,9 @@
 Aluno: Rennan Raposo
 Repositório: https://github.com/rennanraposo/oauth-lab-rennan
 
+Aluno parceiro: Gabriel
+Repositório: https://github.com/Gabriel-Garai/portal-seguro-gabrielgarai
+
 ## Tarefa 1 — CI a cada commit
 
 O workflow ci.yml executa em todo push e em pull requests para main.
